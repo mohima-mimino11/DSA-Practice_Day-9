@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int summation(int a[], int i, int n) {
+long long int summation(long long int a[], int i, long long int n) {
   if(i == n){
     return 0;
   }
@@ -8,13 +8,13 @@ int summation(int a[], int i, int n) {
 }
 
 int main() {
-  int n;
-  scanf("%d", &n);
-  int a[n];
+  long long int n;
+  scanf("%lld", &n);
+  long long int a[n];
   for (int i = 0; i < n; i++) {
-      scanf("%d", &a[i]);
+      scanf("%lld", &a[i]);
   }
 
-  printf("%d\n", summation(a, 0, n));
+  printf("%lld\n", summation(a, 0, n));
   return 0;
 }
